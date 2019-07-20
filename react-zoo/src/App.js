@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 import API from "./util/API.js";
@@ -8,6 +8,7 @@ import Form from "./components/Form";
 
 function App() {
   const [q, setQ] = useState("");
+  const [animalz, setAnimals] = useState();
 
   const handleFormChange = e => {
     let query = e.target.value;
@@ -19,7 +20,8 @@ function App() {
       .then(response => {
         const animals = response.data.data;
         console.log(animals);
-        return animals;
+        setAnimals(animals);
+        setQ("");
       })
       .catch(err => {
         console.log(err);
@@ -33,7 +35,7 @@ function App() {
         inputChange={handleFormChange}
         submitInput={handleFormSubmit}
       />
-      <Container />
+      <Container data={animalz} />
     </div>
   );
 }
