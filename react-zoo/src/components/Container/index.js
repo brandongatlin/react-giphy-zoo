@@ -3,7 +3,7 @@ import React from "react";
 import ImageBox from "../ImageBox";
 
 const Container = props => {
-  const formatTitle = title => {
+  const shortenTitle = title => {
     if (title.length > 12) {
       title = title.substring(0, 11) + "...";
     }
@@ -21,10 +21,14 @@ const Container = props => {
                 alt={img.title}
                 dataStill={img.images["480w_still"].url}
                 dataAnimated={img.images.downsized_medium.url}
-                shortTitle={formatTitle(
-                  img.title.replace("GIF", "").toUpperCase()
-                )}
-                longTitle={img.title.replace("GIF", "").toUpperCase()}
+                shortTitle={
+                  img.title
+                    ? shortenTitle(img.title.replace("GIF", "").toUpperCase())
+                    : "GIF"
+                }
+                longTitle={
+                  img.title ? img.title.replace("GIF", "").toUpperCase() : "GIF"
+                }
               />
             );
           })
