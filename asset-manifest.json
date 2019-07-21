@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-giphy-zoo/static/css/main.4a6e69dd.chunk.css",
+    "main.js": "/react-giphy-zoo/static/js/main.92f1f9c8.chunk.js",
+    "main.js.map": "/react-giphy-zoo/static/js/main.92f1f9c8.chunk.js.map",
+    "runtime~main.js": "/react-giphy-zoo/static/js/runtime~main.390b1881.js",
+    "runtime~main.js.map": "/react-giphy-zoo/static/js/runtime~main.390b1881.js.map",
+    "static/js/2.754b5921.chunk.js": "/react-giphy-zoo/static/js/2.754b5921.chunk.js",
+    "static/js/2.754b5921.chunk.js.map": "/react-giphy-zoo/static/js/2.754b5921.chunk.js.map",
+    "index.html": "/react-giphy-zoo/index.html",
+    "precache-manifest.d673efce96f65408bea0a8fc38da8c88.js": "/react-giphy-zoo/precache-manifest.d673efce96f65408bea0a8fc38da8c88.js",
+    "service-worker.js": "/react-giphy-zoo/service-worker.js",
+    "static/css/main.4a6e69dd.chunk.css.map": "/react-giphy-zoo/static/css/main.4a6e69dd.chunk.css.map"
+  }
+}
