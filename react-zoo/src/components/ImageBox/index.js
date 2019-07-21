@@ -4,11 +4,11 @@ const ImageBox = props => {
   const [animated, setAnimation] = useState(false);
   const [titleLong, setTitle] = useState(false);
 
-  const hoverHandler = props => {
+  const hoverOnHandler = () => {
     setTitle(true);
   };
 
-  const leaveHandler = props => {
+  const hoverOffHandler = () => {
     setTitle(false);
   };
 
@@ -22,8 +22,8 @@ const ImageBox = props => {
         data-still={props.dataStill}
         src={animated ? props.dataAnimated : props.dataStill}
         onClick={e => setAnimation(!animated)}
-        onMouseEnter={e => hoverHandler(props)}
-        onMouseLeave={e => leaveHandler(props)}
+        onMouseEnter={e => hoverOnHandler()}
+        onMouseLeave={e => hoverOffHandler()}
       />
     </div>
   );

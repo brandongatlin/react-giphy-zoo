@@ -4,12 +4,10 @@ import ImageBox from "../ImageBox";
 
 const Container = props => {
   const formatTitle = title => {
-    let shortTitle = title.replace("GIF", "").toUpperCase();
-
-    if (shortTitle.length > 12) {
-      shortTitle = shortTitle.substring(0, 12) + "...";
+    if (title.length > 12) {
+      title = title.substring(0, 11) + "...";
     }
-    return shortTitle;
+    return title;
   };
 
   return (
@@ -23,7 +21,9 @@ const Container = props => {
                 alt={img.title}
                 dataStill={img.images["480w_still"].url}
                 dataAnimated={img.images.downsized_medium.url}
-                shortTitle={formatTitle(img.title)}
+                shortTitle={formatTitle(
+                  img.title.replace("GIF", "").toUpperCase()
+                )}
                 longTitle={img.title.replace("GIF", "").toUpperCase()}
               />
             );
