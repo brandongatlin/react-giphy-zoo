@@ -32,4 +32,7 @@
         height: 18rem;
         width: 100vw;
     }
+    .input {
+        width: 100%;
+    }
 }
