@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./App.css";
 
 import API from "./util/API.js";
 
 import Container from "./components/Container";
 import Form from "./components/Form";
+import Title from "./components/Title";
 
 function App() {
   const [q, setQ] = useState("");
@@ -30,6 +30,7 @@ function App() {
 
   return (
     <div className='App'>
+      <Title />
       <Form
         val={q}
         inputChange={handleFormChange}
