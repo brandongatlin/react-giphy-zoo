@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-giphy-zoo/static/css/main.d5ddbc9c.chunk.css",
+    "main.css": "/react-giphy-zoo/static/css/main.d9dab75f.chunk.css",
     "main.js": "/react-giphy-zoo/static/js/main.da5a3400.chunk.js",
     "main.js.map": "/react-giphy-zoo/static/js/main.da5a3400.chunk.js.map",
     "runtime~main.js": "/react-giphy-zoo/static/js/runtime~main.390b1881.js",
@@ -8,8 +8,8 @@
     "static/js/2.754b5921.chunk.js": "/react-giphy-zoo/static/js/2.754b5921.chunk.js",
     "static/js/2.754b5921.chunk.js.map": "/react-giphy-zoo/static/js/2.754b5921.chunk.js.map",
     "index.html": "/react-giphy-zoo/index.html",
-    "precache-manifest.ddd2e7416383834a30243f1df7aa8416.js": "/react-giphy-zoo/precache-manifest.ddd2e7416383834a30243f1df7aa8416.js",
+    "precache-manifest.ce3f23bd50ec7e6136f57bde5d043a8d.js": "/react-giphy-zoo/precache-manifest.ce3f23bd50ec7e6136f57bde5d043a8d.js",
     "service-worker.js": "/react-giphy-zoo/service-worker.js",
-    "static/css/main.d5ddbc9c.chunk.css.map": "/react-giphy-zoo/static/css/main.d5ddbc9c.chunk.css.map"
+    "static/css/main.d9dab75f.chunk.css.map": "/react-giphy-zoo/static/css/main.d9dab75f.chunk.css.map"
   }
 }
