@@ -22,12 +22,14 @@ const Container = props => {
                 dataStill={img.images["480w_still"].url}
                 dataAnimated={img.images.downsized_medium.url}
                 shortTitle={
-                  img.title
+                  img.title.length > 1
                     ? shortenTitle(img.title.replace("GIF", "").toUpperCase())
                     : "GIF"
                 }
                 longTitle={
-                  img.title ? img.title.replace("GIF", "").toUpperCase() : "GIF"
+                  img.title.length > 1
+                    ? img.title.replace("GIF", "").toUpperCase()
+                    : "GIF"
                 }
               />
             );
